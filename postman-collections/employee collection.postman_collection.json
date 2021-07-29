@@ -1,0 +1,26 @@
+{
+	"info": {
+		"_postman_id": "583bb8f7-9d8f-4f6e-a192-881de10f6725",
+		"name": "employee collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Swagger",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888"
+				},
+				"description": "Get page"
+			},
+			"response": []
+		}
+	]
+}
