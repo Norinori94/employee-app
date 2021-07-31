@@ -7,16 +7,25 @@
 	"item": [
 		{
 			"name": "Swagger",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8888",
-					"protocol": "http",
+					"raw": "{{url}}",
 					"host": [
-						"localhost"
-					],
-					"port": "8888"
+						"{{url}}"
+					]
 				},
 				"description": "Get page"
 			},
@@ -29,7 +38,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"title\": \"IT support\",\r\n  \"description\": \"Supporting.\",\r\n  \"addedAt\": \"2021-07-30T19:10:11.379\"\r\n}",
+					"raw": "{{employee}}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -37,12 +46,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8888/jobdescriptions",
-					"protocol": "http",
+					"raw": "{{url}}/jobdescriptions",
 					"host": [
-						"localhost"
+						"{{url}}"
 					],
-					"port": "8888",
 					"path": [
 						"jobdescriptions"
 					]
@@ -52,16 +59,25 @@
 		},
 		{
 			"name": "All job description",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8888/jobdescriptions",
-					"protocol": "http",
+					"raw": "{{url}}/jobdescriptions",
 					"host": [
-						"localhost"
+						"{{url}}"
 					],
-					"port": "8888",
 					"path": [
 						"jobdescriptions"
 					]
@@ -75,15 +91,13 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8888/jobdescriptions/5",
-					"protocol": "http",
+					"raw": "{{url}}/jobdescriptions/2",
 					"host": [
-						"localhost"
+						"{{url}}"
 					],
-					"port": "8888",
 					"path": [
 						"jobdescriptions",
-						"5"
+						"2"
 					]
 				}
 			},
@@ -95,12 +109,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8888/jobdescriptions",
-					"protocol": "http",
+					"raw": "{{url}}/jobdescriptions",
 					"host": [
-						"localhost"
+						"{{url}}"
 					],
-					"port": "8888",
 					"path": [
 						"jobdescriptions"
 					]
@@ -123,12 +135,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8888/jobdescriptions/4",
-					"protocol": "http",
+					"raw": "{{url}}/jobdescriptions/4",
 					"host": [
-						"localhost"
+						"{{url}}"
 					],
-					"port": "8888",
 					"path": [
 						"jobdescriptions",
 						"4"
@@ -143,12 +153,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8888/jobdescriptions",
-					"protocol": "http",
+					"raw": "{{url}}/jobdescriptions",
 					"host": [
-						"localhost"
+						"{{url}}"
 					],
-					"port": "8888",
 					"path": [
 						"jobdescriptions"
 					]
@@ -162,12 +170,12 @@
 		"basic": [
 			{
 				"key": "password",
-				"value": "password",
+				"value": "{{password}}",
 				"type": "string"
 			},
 			{
 				"key": "username",
-				"value": "admin",
+				"value": "{{username}}",
 				"type": "string"
 			}
 		]
