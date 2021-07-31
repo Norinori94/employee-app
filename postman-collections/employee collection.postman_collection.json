@@ -91,7 +91,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"userName\": \"john01\",\r\n  \"jobDescriptionId\": 1,\r\n  \"firstName\": \"John\",\r\n  \"lastName\": \"Smith\",\r\n  \"middleName\": \"Blake\",\r\n  \"emailId\": \"johnsmith01@gmail.com\",\r\n  \"dayOfBirth\": \"1989-08-21\"\r\n}",
+					"raw": "{\r\n  \"userName\": \"{{emp_username}}\",\r\n  \"jobDescriptionId\": 1,\r\n  \"firstName\": \"{{emp_fistname}}\",\r\n  \"lastName\": \"{{emp_lastname}}\",\r\n  \"middleName\": \"{{emp_fistname}}\",\r\n  \"emailId\": \"johnsmith01@gmail.com\",\r\n  \"dayOfBirth\": \"1989-08-21\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"

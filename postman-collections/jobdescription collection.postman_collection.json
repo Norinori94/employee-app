@@ -168,7 +168,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"title\": \"Instrumental chemist\",\r\n  \"description\": \"Classical analytics and instrumental analytics too.\",\r\n  \"addedAt\": \"2021-07-30T19:28:12.579\"\r\n}",
+					"raw": "{\r\n  \"title\": \"{{jobdescription_title}}\",\r\n  \"description\": \"{{jobdescription_description}}\",\r\n  \"addedAt\": \"2021-07-30T19:28:12.579\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
